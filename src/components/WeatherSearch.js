@@ -1,4 +1,4 @@
-// src/components/WeatherSearch.js
+
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -8,7 +8,7 @@ const WeatherSearch = ({ onAddCity }) => {
 
     const handleSearch = async () => {
         if (city) {
-            const apiKey = '5e8f21b70faff8f243a108a0bde750b0';  // Replace this with your actual API key
+            const apiKey = '5e8f21b70faff8f243a108a0bde750b0'; 
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
             try {
