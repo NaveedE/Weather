@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### `npm start`
 Clone the repository:[Clone](https://github.com/NaveedE/Live_Weather).\
-Run the app in the development mode(npm start).\
+Run the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 
