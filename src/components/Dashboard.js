@@ -58,7 +58,6 @@ const Dashboard = ({ cities, onRemoveCity }) => {
             'volcanic ash': 'mist.png',
             'squalls': 'mist.png',
             'tornado': 'mist.png',
-            // Add more mappings as needed
         };
         console.log(`Weather description: ${description}`); // Log the weather description to check if it's correct
         return descriptionMap[description.toLowerCase()] || 'default.png'; // default.png for any unmapped description
