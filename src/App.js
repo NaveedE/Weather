@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState } from 'react';
 import WeatherSearch from './components/WeatherSearch';
 import Dashboard from './components/Dashboard';
