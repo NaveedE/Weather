@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Dashboard = ({ cities, onRemoveCity }) => {
-    // Function to get custom icon based on weather description
     const getCustomIcon = (description) => {
         const descriptionMap = {
             'clear sky': 'clear_sky.png',
