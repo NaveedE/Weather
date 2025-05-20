@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState } from 'react';
 import WeatherSearch from './components/WeatherSearch';
 import Dashboard from './components/Dashboard';
@@ -7,8 +6,8 @@ import './styles.css';
 const App = () => {
     const [cities, setCities] = useState([]);
 
-    const addCity = (city) => {
-        setCities([...cities, city]);
+    const addCity = (cityData) => {
+        setCities([...cities, cityData]);
     };
 
     const removeCity = (index) => {

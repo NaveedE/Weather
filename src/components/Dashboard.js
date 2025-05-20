@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Dashboard = ({ cities, onRemoveCity }) => {
-    // Function to get custom icon based on weather description
     const getCustomIcon = (description) => {
         const descriptionMap = {
             'clear sky': 'clear_sky.png',
@@ -59,10 +58,9 @@ const Dashboard = ({ cities, onRemoveCity }) => {
             'volcanic ash': 'mist.png',
             'squalls': 'mist.png',
             'tornado': 'mist.png',
-            // Add more mappings as needed
         };
-        console.log(`Weather description: ${description}`); // Log the weather description to check if it's correct
-        return descriptionMap[description.toLowerCase()] || 'default.png'; // default.png for any unmapped description
+        console.log(`Weather description: ${description}`); 
+        return descriptionMap[description.toLowerCase()] || 'default.png'; 
     };
 
     return (
@@ -76,7 +74,7 @@ const Dashboard = ({ cities, onRemoveCity }) => {
                                 className="weather-icon"
                                 src={`${process.env.PUBLIC_URL}/icons/${getCustomIcon(city.description)}`}
                                 alt={city.description}
-                                onError={(e) => { e.target.src = `${process.env.PUBLIC_URL}/icons/default.png`; }} // Fallback to default image
+                                onError={(e) => { e.target.src = `${process.env.PUBLIC_URL}/icons/default.png`; }}
                             />
                             <span className="city-name">{city.name}</span>
                             <span className="city-temp">{city.temp}°C</span>
