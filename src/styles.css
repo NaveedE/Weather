@@ -221,7 +221,27 @@ li button:hover {
   100% { transform: rotate(360deg);}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) and (min-width: 700px) {
+  .container {
+    max-width: 90vw;
+    padding: 24px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  .city-name {
+    font-size: 19px;
+  }
+  .city-temp {
+    font-size: 16px;
+  }
+  .weather-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 700px) and (min-width: 480px) {
   .container {
     max-width: 98vw;
     padding: 12px;
@@ -257,5 +277,40 @@ li button:hover {
   }
   h1 {
     font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 6px;
+    border-radius: 6px;
+  }
+  h1 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .city-name {
+    font-size: 14px;
+  }
+  .city-temp {
+    font-size: 12px;
+  }
+  .weather-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 6px;
+  }
+  input[type="text"] {
+    font-size: 13px;
+    padding: 6px 6px;
+  }
+  button, li button {
+    font-size: 13px;
+    padding: 8px 0;
+    min-width: 80px;
+  }
+  li {
+    padding: 8px 4px;
+    gap: 4px;
   }
 }
